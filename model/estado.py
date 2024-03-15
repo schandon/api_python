@@ -8,17 +8,18 @@ from model import Base
 class Estado(Base):
   __tablename__ = "estado"
 
-  id = colum("pk_estado", Integer, primary_key=True)
-  nome = colum(String(60))
-  uf = colum(String(2), unique=True)
-  data_criacao = colum(DateTime, default=datetime.now())
-  data_atualizacao = colum(DateTime, default=datetime.now())
+  id = Column("pk_estado", Integer, primary_key=True)
+  nome = Column(String(60))
+  uf = Column(String(2), unique=True)
+  data_criacao = Column(DateTime, default=datetime.now())
+  data_atualizacao = Column(DateTime, default=datetime.now())
   # id_municipio = relationship(Municipio)
 
 
-  def __init__(self, nome:str, uf:str,
+  def __init__(self, id: int, nome:str, uf:str,
               data_atualizacao: Union[DateTime, None] = None,
               data_criacao:Union[DateTime, None] = None  ):
+    self.id = id
     self.nome = nome
     self.uf = uf
 

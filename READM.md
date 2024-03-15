@@ -25,3 +25,9 @@ Será necessário utilizar esse código no prompt.
 ```
 python -m venv env
 ```
+
+
+Entrando no Ambiente de Desenvolvimento
+```
+
+```
