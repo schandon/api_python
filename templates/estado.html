@@ -8,14 +8,6 @@
 <hr>
 {% endfor %}
 
-{% if estado.comentarios %}
-    <h2> Comentários </h2>
-    {% for comentario in estado.comentarios -%}
-        <p>{{ comentario.nome_autor }} - {{ comentario.texto }} - {{ comentario.n_estrela }} estrelas </p>
-    {% endfor %}
-    <hr>
-{% endif %}
-
 </body>
 </html>
 

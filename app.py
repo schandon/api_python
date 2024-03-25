@@ -4,24 +4,24 @@ from model import Session, Estado
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.get('/')
 def hello_world():
   # session = Session()
   return render_template("app.html"), 200
 if __name__ == '__main__':
   app.run(debug=True)
 
-@app.route('/todos_estados', methods=['GET'])
-def todos_estados():
+@app.get('/estados')
+def estados():
   session = Session()
   estado = session.query(Estado).all()
   if not estado:
     error_msg = "Nenhum estado encontrado na base"
     return render_template("error.html", error_code = 404, error_msg = error_msg ), 404
   else:
-        return render_template("estado.html", estado=estado), 200                         
+    return render_template("estado.html", estado=estado), 200                         
 
-@app.route('/add_estado', methods = ['POST'])
+@app.post('/add_estado')
 def add_estado():
   session = Session()
   estado = Estado(
