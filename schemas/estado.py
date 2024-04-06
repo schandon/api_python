@@ -4,12 +4,11 @@ from model.estado import Estado
 
 
 class EstadoSchema(BaseModel):
-  nome = str
-  uf = str
+  nome: str = "Rio de Janeiro"
+  uf: str = 'RJ'
 
-class EstadoBucasSchema(BaseModel):
-  nome = str
-  uf = str
+class EstadoBuscaSchema(BaseModel):
+  nome: str = 'Teste'
 
 class ListagemEstadoSchema(BaseModel):
   estados: List[EstadoSchema]
@@ -24,7 +23,16 @@ def apresenta_estados(estados: list[Estado]):
     
   return { "Estados" : result }
 
-def apresenta_estado(estado: Estado):
+class EstadoViewSchema(BaseModel):
+    id : int = 1
+    Nome : str = "Rio de Janeiro"
+    uf: str = "RJ"
+
+class EstadoDelSchema(BaseModel):
+  mesage : str
+  nome : str
+
+def apresenta_estado(estado:Estado):
   return {
     "id" : estado.id,
     "Nome" : estado.nome,

@@ -6,28 +6,30 @@ Tem como objetivo pegar informações pesquisadas por nossos usuarios e salva-lo
 
 ---
 ## Como executar
-Será necessário ter todas as libs python listadas no `requirements.txt` instaladas, é bem simples o processo.
-
+Para não precisar instalar as bivliotecas na sua maquina, iremos utilizar a virtualização, como isso iremos seguir um conjunto de passos.
+  * Passo 1:
+    * Executar o código para criar a pasta do ambiente
+ ```
+      python -m venv env
 ```
-(env)$ pip install -r requirements.txt
+  * Passo 2:
+    * Entrar na modo virtualizado, executando o código
 ```
-
-Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
-
-Para executar a API  basta executar:
-
+      env\Scripts\activate
 ```
-(env)$ flask run --host 0.0.0.0 --port 5000
+##### OBS.
+  * Passo 2.1:
+    * Em caso de erro na criação do ambiente virtualizado, utilizaremos o comando a seguir, caso não de erro ao utilizar o Passo 02, ignore o Passo. 
 ```
-
-### Criando Ambiente Vitualizado.
-Será necessário utilizar esse código no prompt.
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+``` 
+  * Passo 3:
+    * Será necessário ter todas as libs python listadas no `requirements.txt` instaladas, é bem simples o processo. 
 ```
-python -m venv env
+    pip install -r requirements.txt 
 ```
-
-
-Entrando no Ambiente de Desenvolvimento
+  * Passo 4:
+    * Para executar a API  basta executar:
 ```
-
+    flask run --host 0.0.0.0 --port 5000 --reload
 ```
