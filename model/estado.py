@@ -1,5 +1,4 @@
-from sqlalchemy import Column, String, Integer, DateTime, Float
-from sqlalchemy.orm import relationship
+from sqlalchemy import Column, String, Integer, DateTime
 from datetime import datetime
 from typing import Union
 
@@ -13,7 +12,7 @@ class Estado(Base):
   uf = Column(String(2), unique=True)
   data_criacao = Column(DateTime, default=datetime.now())
   data_atualizacao = Column(DateTime, default=datetime.now())
-  # id_municipio = relationship(Municipio)
+  
 
 
   def __init__(self, id: int, nome:str, uf:str,

@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import List
-from model.estado import Estado
+from model.estado import estado
+
 
 
 class EstadoSchema(BaseModel):
@@ -10,10 +11,10 @@ class EstadoSchema(BaseModel):
 class EstadoBuscaSchema(BaseModel):
   nome: str = 'Teste'
 
-class ListagemEstadoSchema(BaseModel):
+class ListagemEstadosSchema(BaseModel):
   estados: List[EstadoSchema]
   
-def apresenta_estados(estados: list[Estado]):
+def apresenta_estado(estados: list[estado]):
   result = []
   for estado in estados:
     result.append({ 
@@ -32,7 +33,7 @@ class EstadoDelSchema(BaseModel):
   mesage : str
   nome : str
 
-def apresenta_estado(estado:Estado):
+def apresenta_estado(estado:estado):
   return {
     "id" : estado.id,
     "Nome" : estado.nome,
