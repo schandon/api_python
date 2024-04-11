@@ -1,0 +1,87 @@
+[2024-04-10 21:55:57,864] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 21:56:15,370] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.69:7000 - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 21:56:15,371] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 21:56:15,373] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 21:59:15,103] ERROR log_exception() L828  Exception on /estado [GET] - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py L828 
+Traceback (most recent call last):
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\app.py", line 94, in get_produto
+    estado_id = query.id
+                ^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\pydantic\main.py", line 767, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'EstadoBuscaSchema' object has no attribute 'id'
+[2024-04-10 21:59:15,109] INFO _log() L96   127.0.0.1 - - [10/Apr/2024 21:59:15] "[35m[1mGET /estado HTTP/1.1[0m" 500 - - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 22:01:53,157] ERROR log_exception() L828  Exception on /estado [GET] - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py L828 
+Traceback (most recent call last):
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\app.py", line 94, in get_produto
+    estado_id = query.id
+                ^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\pydantic\main.py", line 767, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'EstadoBuscaSchema' object has no attribute 'id'
+[2024-04-10 22:01:53,161] INFO _log() L96   127.0.0.1 - - [10/Apr/2024 22:01:53] "[35m[1mGET /estado HTTP/1.1[0m" 500 - - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-10 22:12:03,841] ERROR log_exception() L828  Exception on /estado [GET] - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py L828 
+Traceback (most recent call last):
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\app.py", line 94, in get_produto
+    estado_id = query.id
+                ^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\desenvolvimento-full-stack\desenvolvimento-full-stack-basico\aula-3\meu_app_api\env\Lib\site-packages\pydantic\main.py", line 767, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'EstadoBuscaSchema' object has no attribute 'id'

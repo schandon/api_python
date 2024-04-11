@@ -1,4 +1,4 @@
 from schemas.estado import EstadoSchema, EstadoBuscaSchema, EstadoViewSchema, \
-                            ListagemEstadosSchema, EstadoDelSchema, apresenta_Estados, \
-                            apresenta_Estado, apresenta_Estados
+                            ListagemEstadosSchema, EstadoDelSchema, apresenta_estados, \
+                            apresenta_estado, apresenta_estados
 from schemas.error import ErrorSchema

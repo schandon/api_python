@@ -7,4 +7,3 @@ pydantic
 SQLAlchemy
 SQLAlchemy-Utils
 typing_extensions
-logger
