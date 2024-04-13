@@ -8,9 +8,9 @@ from  model import Base
 class Estado(Base):
     __tablename__ = 'estado'
 
-    id = Column("pk_estado", Integer, primary_key=True)
+    id = Column("id", Integer, primary_key=True)
     nome = Column(String(140), unique=True)
-    string = Column(String(2), unique=True)
+    uf = Column(String(2), unique=True)
     data_insercao = Column(DateTime, default=datetime.now())
 
 

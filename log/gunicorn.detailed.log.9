@@ -1,0 +1,95 @@
+[2024-04-13 18:49:47,454] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:50:55,310] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:50:55,314] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:50:55,315] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:50:56,520] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:19,850] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:19,852] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:19,853] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\schemas\\estado.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:21,060] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:25,557] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 18:51:25] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:51:26,879] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 18:51:26] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:43,842] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:43,844] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:43,845] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:45,358] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:52,801] ERROR log_exception() L1744 Exception on /estados [GET] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 91, in get_estados
+    return apresenta_estados({"Id": estados.id, "Nome":estados.nome, "Uf":estados.uf}), 200
+                                    ^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+[2024-04-13 18:58:52,806] INFO _log() L224   * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:52,811] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 18:58:52] "[35m[1mGET /estados HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:52,811] INFO _log() L224   * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask_cors\\extension.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:58:53,954] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:59:00,130] ERROR log_exception() L1744 Exception on /estados [GET] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 91, in get_estados
+    return apresenta_estados({"Id": estados.id, "Nome":estados.nome, "Uf":estados.uf}), 200
+                                    ^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+[2024-04-13 18:59:00,135] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 18:59:00] "[35m[1mGET /estados HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:59:08,116] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:59:08,117] INFO _log() L224   * Detected change in 'C:\\Users\\sp-xa\\OneDrive\\Área de Trabalho\\api_python\\app.py', reloading - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-13 18:59:09,051] ERROR log_exception() L1744 Exception on /estados [GET] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 91, in get_estados
+    return apresenta_estados(estados), 200
+                                    ^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+[2024-04-13 18:59:09,057] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 18:59:09] "[35m[1mGET /estados HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 

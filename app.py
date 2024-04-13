@@ -1,6 +1,7 @@
 from flask_openapi3 import OpenAPI, Info, Tag
-from flask import redirect
+from flask import redirect, request, jsonify
 from urllib.parse import unquote
+
 
 from sqlalchemy.exc import IntegrityError
 
@@ -28,16 +29,22 @@ def home():
 
 @app.post('/estado', tags=[estado_tag],
           responses={"200": EstadoViewSchema, "409": ErrorSchema, "400": ErrorSchema})
-def add_produto(form: EstadoSchema):
+def add_estado():
     """Adiciona um novo Estado à base de dados
 
     Retorna uma representação dos estado.
     """
+    data = request.json
+
+    nome = data['nome']
+    uf = data['uf']
+
     estado = Estado(
-        nome=form.nome,
-        quantidade=form.quantidade,
-        valor=form.valor)
+        nome= nome,
+        uf=uf
+        )
     logger.debug(f"Adicionando estado de nome: '{estado.nome}'")
+    
     try:
         # criando conexão com a base
         session = Session()
@@ -50,14 +57,14 @@ def add_produto(form: EstadoSchema):
 
     except IntegrityError as e:
         # como a duplicidade do nome é a provável razão do IntegrityError
-        error_msg = "Produto de mesmo nome já salvo na base :/"
-        logger.warning(f"Erro ao adicionar produto '{estado.nome}', {error_msg}")
+        error_msg = "Estado de mesmo nome já salvo na base :/"
+        logger.warning(f"Erro ao adicionar Estado '{estado.nome}', {error_msg}")
         return {"mesage": error_msg}, 409
 
     except Exception as e:
         # caso um erro fora do previsto
         error_msg = "Não foi possível salvar novo item :/"
-        logger.warning(f"Erro ao adicionar produto '{estado.nome}', {error_msg}")
+        logger.warning(f"Erro ao adicionar Estado '{estado.nome}', {error_msg}")
         return {"mesage": error_msg}, 400
 
 
@@ -100,8 +107,8 @@ def get_produto(query: EstadoBuscaSchema):
 
     if not estado:
         # se o produto não foi encontrado
-        error_msg = "Produto não encontrado na base :/"
-        logger.warning(f"Erro ao buscar produto '{estado_id}', {error_msg}")
+        error_msg = "Estado não encontrado na base :/"
+        logger.warning(f"Erro ao buscar estado '{estado_id}', {error_msg}")
         return {"mesage": error_msg}, 404
     else:
         logger.debug(f"estado econtrado: '{estado.nome}'")
@@ -116,21 +123,20 @@ def del_estado(query: EstadoBuscaSchema):
 
     Retorna uma mensagem de confirmação da remoção.
     """
-    estado_nome = unquote(unquote(query.nome))
-    print(estado_nome)
-    logger.debug(f"Deletando dados sobre estado #{estado_nome}")
+    estado_id = query.id
+    logger.debug(f"Deletando dados sobre estado #{estado_id}")
     # criando conexão com a base
     session = Session()
     # fazendo a remoção
-    count = session.query(Estado).filter(Estado.nome == estado_nome).delete()
+    count = session.query(Estado).filter(Estado.id == estado_id).delete()
     session.commit()
 
     if count:
         # retorna a representação da mensagem de confirmação
-        logger.debug(f"Deletado produto #{estado_nome}")
-        return {"mesage": "estado removido", "id": estado_nome}
+        logger.debug(f"Deletado produto #{estado_id}")
+        return {"mesage": "estado removido", "id": estado_id}
     else:
         # se o estado não foi encontrado
         error_msg = "estado não encontrado na base :/"
-        logger.warning(f"Erro ao deletar estado #'{estado_nome}', {error_msg}")
+        logger.warning(f"Erro ao deletar estado #'{estado_id}', {error_msg}")
         return {"mesage": error_msg}, 404

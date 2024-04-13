@@ -7,17 +7,17 @@ from model.estado import Estado
 class EstadoSchema(BaseModel):
     """ Define como um novo estado a ser inserido deve ser representado
     """
-    id: int = 33
-    nome: str = "Rio de Janeiro"
-    uf: str = "RJ"
-    
+    id : int
+    nome: str 
+    uf: str
 
+    
 
 class EstadoBuscaSchema(BaseModel):
     """ Define como deve ser a estrutura que representa a busca. Que será
         feita apenas com base no nome do estado.
     """
-    nome: str = "Teste"
+    id: int 
 
 
 class ListagemEstadosSchema(BaseModel):
@@ -33,6 +33,7 @@ def apresenta_estados(estados: List[Estado]):
     result = []
     for estado in estados:
         result.append({
+            "id":estado.id,
             "nome": estado.nome,
             "uf": estado.uf,
         })
