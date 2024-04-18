@@ -26,7 +26,6 @@ def home():
     """
     return redirect('/openapi')
 
-
 @app.post('/estado', tags=[estado_tag],
           responses={"200": EstadoViewSchema, "409": ErrorSchema, "400": ErrorSchema})
 def add_estado():
@@ -35,13 +34,17 @@ def add_estado():
     Retorna uma representação dos estado.
     """
     data = request.json
-
+    id = data['id']
     nome = data['nome']
     uf = data['uf']
+    
+
+   
 
     estado = Estado(
+        id = id,
         nome= nome,
-        uf=uf
+        uf=uf,
         )
     logger.debug(f"Adicionando estado de nome: '{estado.nome}'")
     
@@ -66,6 +69,7 @@ def add_estado():
         error_msg = "Não foi possível salvar novo item :/"
         logger.warning(f"Erro ao adicionar Estado '{estado.nome}', {error_msg}")
         return {"mesage": error_msg}, 400
+
 
 
 @app.get('/estados', tags=[estado_tag],

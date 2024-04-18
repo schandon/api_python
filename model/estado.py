@@ -8,13 +8,13 @@ from  model import Base
 class Estado(Base):
     __tablename__ = 'estado'
 
-    id = Column("id", Integer, primary_key=True)
-    nome = Column(String(140), unique=True)
+    id = Column(Integer, primary_key=True )
+    nome = Column(String(140) )
     uf = Column(String(2), unique=True)
     data_insercao = Column(DateTime, default=datetime.now())
 
 
-    def __init__(self, nome:str, uf:str,
+    def __init__(self, id: int ,nome:str, uf:str,
                  data_insercao:Union[DateTime, None] = None):
         """
         Cria um Produto
@@ -25,6 +25,7 @@ class Estado(Base):
             valor: valor esperado para o produto
             data_insercao: data de quando o produto foi inserido à base
         """
+        self.id= id
         self.nome = nome
         self.uf = uf
 

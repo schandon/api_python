@@ -63,5 +63,5 @@ def apresenta_estado(estado: Estado):
     return {
         "id": estado.id,
         "nome": estado.nome,
-        "uf": estado.uf
+        "uf": estado.uf,
     }

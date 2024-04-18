@@ -1,30 +1,98 @@
-[2024-04-13 19:33:02,283] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:33:49,106] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:33:49] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:33:49,867] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:33:49] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:34:32,419] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:34:32] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:34:33,003] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:34:33] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:24,077] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:24] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:24,634] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:24] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:25,205] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:25] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:26,471] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:26] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:26,915] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:26] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:27,372] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:27] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:36:42,792] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:36:42] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:38:29,866] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:38:29] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:38:30,767] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:38:30] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:40:30,619] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:40:30] "[33mGET /produtos HTTP/1.1[0m" 404 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:44:42,022] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:44:42] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:44:42,643] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:44:42] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:44:42,897] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:44:42] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:45:37,940] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:45:37] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:45:58,211] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:45:58] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:46:54,259] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:46:54] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:47:07,275] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:47:07] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:47:53,992] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:47:53] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:47:59,493] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:47:59] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:48:25,753] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:48:25] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:48:31,238] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:48:31] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:49:45,169] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:49:45] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:52:04,097] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:52:04] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:52:25,860] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:52:25] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
-[2024-04-13 19:52:45,731] INFO _log() L224  127.0.0.1 - - [13/Apr/2024 19:52:45] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:01:44,267] INFO _log() L224   * Restarting with watchdog (windowsapi) - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:14,834] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:14] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:19,117] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:19] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:19,121] ERROR log_exception() L1744 Exception on /estado [POST] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 39, in add_estado
+    uf = data['uf']
+         ~~~~^^^^^^
+KeyError: 'uf'
+[2024-04-18 02:02:19,128] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:19] "[35m[1mPOST /estado HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:30,104] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:30] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:34,220] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:34] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:34,227] WARNING add_estado() L70   Erro ao adicionar Estado '{}', Não foi possível salvar novo item :/ - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py L70  
+[2024-04-18 02:02:34,228] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:34] "[31m[1mPOST /estado HTTP/1.1[0m" 400 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:54,272] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:54] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:58,258] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:58] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:02:58,262] ERROR log_exception() L1744 Exception on /estado [POST] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 37, in add_estado
+    id = data['id']
+         ~~~~^^^^^^
+KeyError: 'id'
+[2024-04-18 02:02:58,266] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:02:58] "[35m[1mPOST /estado HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:03:02,486] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:03:02] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:03:54,751] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:03:54] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:03:54,754] ERROR log_exception() L1744 Exception on /estado [POST] - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py", line 37, in add_estado
+    id = data['id']
+         ~~~~^^^^^^
+KeyError: 'id'
+[2024-04-18 02:03:54,756] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:03:54] "[35m[1mPOST /estado HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:04:00,905] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:04:00] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:04:01,156] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:04:01] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:04:03,676] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:04:03] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:04:03,681] WARNING add_estado() L70   Erro ao adicionar Estado '{}', Não foi possível salvar novo item :/ - call_trace=C:\Users\sp-xa\OneDrive\Área de Trabalho\api_python\app.py L70  
+[2024-04-18 02:04:03,683] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:04:03] "[31m[1mPOST /estado HTTP/1.1[0m" 400 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:05:14,726] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:05:14] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:05:47,062] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:05:47] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:05:53,512] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:05:53] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:05:53,535] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:05:53] "[35m[1mPOST /estado HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:06:25,549] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:06:25] "GET /estados HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:06:30,390] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:06:30] "OPTIONS /estado HTTP/1.1" 200 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-04-18 02:06:30,404] INFO _log() L224  127.0.0.1 - - [18/Apr/2024 02:06:30] "[35m[1mPOST /estado HTTP/1.1[0m" 500 - - call_trace=C:\ProgramData\anaconda3\Lib\site-packages\werkzeug\_internal.py L224 
