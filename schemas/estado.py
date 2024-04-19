@@ -7,9 +7,9 @@ from model.estado import Estado
 class EstadoSchema(BaseModel):
     """ Define como um novo estado a ser inserido deve ser representado
     """
-    id : int
-    nome: str 
-    uf: str
+    id : int = 33
+    nome: str = 'Rio de Janeiro'
+    uf: str = 'RJ'
 
     
 
